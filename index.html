@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VCAR Credenciamento - Oficinas Faturando 30-50% a Mais</title>
+    
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+    <!-- End Google Tag Manager -->
+    
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    <!-- End Google Analytics 4 -->
+    
+    <!-- Meta Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', 'YOUR_PIXEL_ID_HERE');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID_HERE&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Meta Pixel Code -->
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #0a0a0a;
+            color: #fff;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Header com Urgência */
+        .urgency-bar {
+            background: linear-gradient(90deg, #ff3366, #ff6b35);
+            color: #fff;
+            text-align: center;
+            padding: 12px;
+            font-weight: 700;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.95; }
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+            padding: 80px 20px 60px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 20% 50%, rgba(0, 176, 117, 0.15), transparent 50%),
+                        radial-gradient(circle at 80% 80%, rgba(0, 176, 117, 0.1), transparent 50%);
+            z-index: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .pre-headline {
+            color: #00b075;
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: 56px;
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 30px;
+            background: linear-gradient(135deg, #fff 0%, #e0e0e0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero h1 span {
+            color: #00b075;
+            background: linear-gradient(135deg, #00b075 0%, #00ff9d 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: 22px;
+            color: #b0b0b0;
+            margin-bottom: 40px;
+            line-height: 1.5;
+        }
+
+        /* Social Proof Inline */
+        .social-proof {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+
+        .proof-item {
+            text-align: center;
+        }
+
+        .proof-number {
+            font-size: 36px;
+            font-weight: 900;
+            color: #00b075;
+            display: block;
+        }
+
+        .proof-label {
+            font-size: 14px;
+            color: #888;
+        }
+
+        /* CTA Button */
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #00b075 0%, #00ff9d 100%);
+            color: #0a0a0a;
+            padding: 22px 50px;
+            font-size: 20px;
+            font-weight: 900;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 10px 40px rgba(0, 176, 117, 0.3);
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.5s;
+        }
+
+        .cta-button:hover::before {
+            left: 100%;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 50px rgba(0, 176, 117, 0.5);
+        }
+
+        .cta-subtext {
+            font-size: 14px;
+            color: #888;
+            margin-top: 15px;
+        }
+
+        /* Problem Section */
+        .problem-section {
+            background: #111;
+            padding: 80px 20px;
+            border-top: 1px solid #222;
+        }
+
+        .problem-section h2 {
+            font-size: 42px;
+            text-align: center;
+            margin-bottom: 50px;
+            font-weight: 800;
+        }
+
+        .problem-section h2 span {
+            color: #ff3366;
+        }
+
+        .problems-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .problem-card {
+            background: #1a1a1a;
+            border: 2px solid #ff3366;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .problem-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .problem-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .problem-card h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #ff3366;
+        }
+
+        .problem-card p {
+            color: #b0b0b0;
+            font-size: 15px;
+        }
+
+        /* Solution Section */
+        .solution-section {
+            background: linear-gradient(135deg, #00b075 0%, #00ff9d 100%);
+            padding: 80px 20px;
+            color: #0a0a0a;
+        }
+
+        .solution-section h2 {
+            font-size: 48px;
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: 900;
+        }
+
+        .solution-subtitle {
+            text-align: center;
+            font-size: 22px;
+            max-width: 700px;
+            margin: 0 auto 60px;
+            font-weight: 600;
+        }
+
+        /* Benefits Grid */
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .benefit-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px 30px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .benefit-icon {
+            font-size: 56px;
+            margin-bottom: 20px;
+        }
+
+        .benefit-card h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            font-weight: 800;
+        }
+
+        .benefit-card p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Results Section */
+        .results-section {
+            background: #0a0a0a;
+            padding: 80px 20px;
+        }
+
+        .results-section h2 {
+            font-size: 42px;
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: 800;
+        }
+
+        .results-subtitle {
+            text-align: center;
+            color: #888;
+            font-size: 18px;
+            margin-bottom: 60px;
+        }
+
+        .testimonial {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+            border-left: 5px solid #00b075;
+            border-radius: 15px;
+            padding: 40px;
+            margin-bottom: 30px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+        }
+
+        .testimonial::before {
+            content: '"';
+            font-size: 80px;
+            color: #00b075;
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            opacity: 0.3;
+        }
+
+        .testimonial-text {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            font-style: italic;
+            color: #e0e0e0;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .author-avatar {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #00b075, #00ff9d);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .author-info {
+            flex: 1;
+        }
+
+        .author-name {
+            font-weight: 700;
+            font-size: 16px;
+            color: #fff;
+        }
+
+        .author-business {
+            color: #00b075;
+            font-size: 14px;
+        }
+
+        .result-badge {
+            background: #00b075;
+            color: #0a0a0a;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        /* Form Section */
+        .form-section {
+            background: #111;
+            padding: 80px 20px;
+            border-top: 1px solid #222;
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+            padding: 50px 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 176, 117, 0.2);
+            border: 1px solid #333;
+        }
+
+        .form-headline {
+            text-align: center;
+            font-size: 32px;
+            font-weight: 900;
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, #00b075 0%, #00ff9d 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .form-subheadline {
+            text-align: center;
+            color: #b0b0b0;
+            margin-bottom: 40px;
+            font-size: 16px;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #b0b0b0;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 18px;
+            background: #0a0a0a;
+            border: 2px solid #333;
+            border-radius: 10px;
+            color: #fff;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: #00b075;
+        }
+
+        .form-group input::placeholder {
+            color: #555;
+        }
+
+        .privacy-text {
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+            margin-top: 20px;
+        }
+
+        .guarantee-badge {
+            background: rgba(0, 176, 117, 0.1);
+            border: 2px solid #00b075;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .guarantee-badge h4 {
+            color: #00b075;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .guarantee-badge p {
+            color: #b0b0b0;
+            font-size: 14px;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            background: #0a0a0a;
+            padding: 80px 20px;
+        }
+
+        .faq-section h2 {
+            font-size: 42px;
+            text-align: center;
+            margin-bottom: 60px;
+            font-weight: 800;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: #1a1a1a;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-left: 4px solid #00b075;
+        }
+
+        .faq-question {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #00b075;
+        }
+
+        .faq-answer {
+            color: #b0b0b0;
+            line-height: 1.7;
+        }
+
+        /* Footer */
+        footer {
+            background: #000;
+            padding: 40px 20px;
+            text-align: center;
+            border-top: 1px solid #222;
+        }
+
+        footer p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        /* Floating CTA */
+        .floating-cta {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            display: none;
+        }
+
+        .floating-cta.show {
+            display: block;
+            animation: slideIn 0.5s ease;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(400px);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero-subtitle {
+                font-size: 18px;
+            }
+
+            .social-proof {
+                gap: 20px;
+            }
+
+            .proof-number {
+                font-size: 28px;
+            }
+
+            .cta-button {
+                padding: 18px 35px;
+                font-size: 16px;
+            }
+
+            .problem-section h2,
+            .results-section h2,
+            .faq-section h2 {
+                font-size: 32px;
+            }
+
+            .solution-section h2 {
+                font-size: 36px;
+            }
+
+            .form-container {
+                padding: 40px 25px;
+            }
+
+            .floating-cta {
+                bottom: 10px;
+                right: 10px;
+                left: 10px;
+            }
+
+            .floating-cta .cta-button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Barra de Urgência -->
+    <div class="urgency-bar">
+        🔥 ÚLTIMAS VAGAS PARA CREDENCIAMENTO NA SUA REGIÃO | GARANTA SUA VAGA AGORA
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="pre-headline">✅ PROGRAMA DE CREDENCIAMENTO VCAR</div>
+                <h1>Descubra Como Oficinas Comuns Aumentaram o Faturamento em <span>30-50%</span> Sem Gastar Nada com Marketing</h1>
+                <p class="hero-subtitle">Sem investir 1 real em marketing. Sem depender de clientes esporádicos. Receba um fluxo constante de clientes qualificados direto na sua oficina.</p>
+                
+                <div class="social-proof">
+                    <div class="proof-item">
+                        <span class="proof-number" id="userRegion">Carregando...</span>
+                        <span class="proof-label">Cobertura Total</span>
+                    </div>
+                    <div class="proof-item">
+                        <span class="proof-number">+2.000</span>
+                        <span class="proof-label">Clientes Ativos</span>
+                    </div>
+                    <div class="proof-item">
+                        <span class="proof-number">4.8★</span>
+                        <span class="proof-label">Avaliação Média</span>
+                    </div>
+                </div>
+
+                <a href="#cadastro" class="cta-button">QUERO FATURAR MAIS AGORA</a>
+                <p class="cta-subtext">🔒 Processo 100% gratuito | Resposta em até 24h</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem-section">
+        <div class="container">
+            <h2>Você Está Cansado de <span>Sofrer</span> Com Esses Problemas?</h2>
+            
+            <div class="problems-grid">
+                <div class="problem-card">
+                    <div class="problem-icon">📉</div>
+                    <h3>Agenda com Buracos</h3>
+                    <p>Dias inteiros sem atendimentos enquanto os custos fixos continuam corroendo seu lucro.</p>
+                </div>
+                
+                <div class="problem-card">
+                    <div class="problem-icon">💸</div>
+                    <h3>Marketing que Não Funciona</h3>
+                    <p>Gastar com anúncios, panfletos e redes sociais que não trazem o retorno esperado.</p>
+                </div>
+                
+                <div class="problem-card">
+                    <div class="problem-icon">⚠️</div>
+                    <h3>Faturamento Imprevisível</h3>
+                    <p>Não saber quanto vai entrar no próximo mês te impede de planejar e crescer.</p>
+                </div>
+                
+                <div class="problem-card">
+                    <div class="problem-icon">🔄</div>
+                    <h3>Dependência de Indicação</h3>
+                    <p>Esperar passivamente que alguém te indique enquanto a concorrência está ativa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="solution-section">
+        <div class="container">
+            <h2>A VCAR Resolve Tudo Isso Para Você</h2>
+            <p class="solution-subtitle">Conectamos sua oficina com milhares de motoristas que PRECISAM dos seus serviços AGORA</p>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎯</div>
+                    <h3>Fluxo Constante de Clientes</h3>
+                    <p>Receba diariamente agendamentos de associados VCAR que já estão prontos para contratar seus serviços.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">💰</div>
+                    <h3>Faturamento Previsível</h3>
+                    <p>Receba repasses automáticos dos serviços agendados pelos nossos clientes. Previsibilidade financeira todo mês.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">🚀</div>
+                    <h3>Marketing Gratuito Premium</h3>
+                    <p>Apareça em destaque no nosso app usado por +350 mil motoristas. Sem pagar nada por isso.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">⭐</div>
+                    <h3>Selo de Credibilidade</h3>
+                    <p>Ser credenciado VCAR transmite confiança instantânea e atrai mais clientes além da nossa base.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">📊</div>
+                    <h3>Crescimento Escalável</h3>
+                    <p>Quanto mais você atende bem, mais avaliações positivas recebe e mais clientes conquistam.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">🤝</div>
+                    <h3>Suporte Dedicado</h3>
+                    <p>Time especializado para ajudar você a extrair o máximo resultado da parceria.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="results-section">
+        <div class="container">
+            <h2>Resultados Reais de Parceiros Reais</h2>
+            <p class="results-subtitle">Veja o que oficinas como a sua estão conquistando</p>
+            
+            <div class="testimonial">
+                <p class="testimonial-text">"Em 3 meses como credenciado, meu faturamento aumentou 43%. São clientes certos, que pagam bem e voltam sempre. Minha agenda que vivia vazia agora está lotada até semana que vem. Melhor decisão que tomei para o meu negócio."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">RM</div>
+                    <div class="author-info">
+                        <div class="author-name">Ricardo Mendes</div>
+                        <div class="author-business">Auto Center Speed - São Paulo/SP</div>
+                    </div>
+                    <div class="result-badge">+43% Faturamento</div>
+                </div>
+            </div>
+            
+            <div class="testimonial">
+                <p class="testimonial-text">"Eu estava cética, mas resolvi testar. Resultado: em 60 dias já tinha recuperado o investimento de tempo no cadastro e hoje 35% do meu faturamento vem dos associados VCAR. O melhor é que são clientes fiéis que voltam para revisões."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">CS</div>
+                    <div class="author-info">
+                        <div class="author-name">Carla Souza</div>
+                        <div class="author-business">Mecânica Souza - Belo Horizonte/MG</div>
+                    </div>
+                    <div class="result-badge">+R$ 28K/mês</div>
+                </div>
+            </div>
+            
+            <div class="testimonial">
+                <p class="testimonial-text">"Antes eu gastava R$ 2.500/mês em marketing e tinha resultado fraco. Com a VCAR não pago nada e recebo 4x mais clientes. São motoristas qualificados que realmente precisam dos serviços. Minha equipe está trabalhando no limite da capacidade."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">JA</div>
+                    <div class="author-info">
+                        <div class="author-name">João Alberto</div>
+                        <div class="author-business">JA Auto Center - Rio de Janeiro/RJ</div>
+                    </div>
+                    <div class="result-badge">Zerou Marketing</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section id="cadastro" class="form-section">
+        <div class="container">
+            <div class="form-container">
+                <h3 class="form-headline">Preencha Agora e Receba Nossa Ligação em 24h</h3>
+                <p class="form-subheadline">Não perca a oportunidade de transformar sua oficina em uma máquina de faturamento</p>
+                
+                <form id="leadForm">
+                    <div class="form-group">
+                        <label for="nome_oficina">Nome da Oficina *</label>
+                        <input type="text" id="nome_oficina" name="nome_oficina" placeholder="Ex: Auto Center Silva" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="seu_nome">Seu Nome Completo *</label>
+                        <input type="text" id="seu_nome" name="seu_nome" placeholder="Ex: José Silva" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="whatsapp">WhatsApp (com DDD) *</label>
+                        <input type="tel" id="whatsapp" name="whatsapp" placeholder="(11) 99999-9999" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Seu Melhor E-mail *</label>
+                        <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                    </div>
+                    
+                    <button type="submit" class="cta-button" style="width: 100%; margin-top: 10px;">
+                        GARANTIR MINHA VAGA AGORA
+                    </button>
+                    
+                    <p class="privacy-text">🔒 Seus dados estão 100% seguros e protegidos</p>
+                </form>
+                
+                <div class="guarantee-badge">
+                    <h4>⚡ Resposta Garantida em 24 Horas</h4>
+                    <p>Nossa equipe comercial entrará em contato para agendar uma conversa e explicar todo o processo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Perguntas Frequentes</h2>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">❓ Quanto custa para se credenciar?</div>
+                    <div class="faq-answer">O credenciamento é 100% GRATUITO. Você não paga nada para entrar na rede, nem mensalidade, nem taxa de adesão. Apenas recebe clientes.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">❓ Como funciona o pagamento dos serviços?</div>
+                    <div class="faq-answer">O cliente paga diretamente para você. Sem intermediação, sem retenção. O dinheiro cai direto na sua conta.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">❓ Quantos clientes vou receber por mês?</div>
+                    <div class="faq-answer">Isso varia conforme sua região e capacidade de atendimento, mas em média nossas oficinas recebem entre 15 a 45 novos clientes por mês.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">❓ Tem algum contrato de exclusividade?</div>
+                    <div class="faq-answer">Não. Você pode continuar atendendo seus clientes normais e trabalhar com outras plataformas sem problemas.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">❓ E se eu não gostar da parceria?</div>
+                    <div class="faq-answer">Você pode sair quando quiser, sem multa e sem burocracia. Mas garantimos que você não vai querer sair depois de ver os resultados.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="solution-section" style="padding: 60px 20px;">
+        <div class="container" style="text-align: center;">
+            <h2 style="margin-bottom: 20px;">Não Deixe Sua Concorrência Ficar à Frente</h2>
+            <p style="font-size: 20px; margin-bottom: 40px; font-weight: 600;">Enquanto você pensa, outras oficinas já estão faturando mais com a VCAR</p>
+            <a href="#cadastro" class="cta-button">SIM, EU QUERO CRESCER AGORA</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 VCAR Clube de Benefícios. Todos os direitos reservados.</p>
+        <p style="margin-top: 10px;">Transformando oficinas em negócios lucrativos desde 2020</p>
+    </footer>
+
+    <!-- Floating CTA -->
+    <div class="floating-cta" id="floatingCta">
+        <a href="#cadastro" class="cta-button">💰 GARANTIR MINHA VAGA</a>
+    </div>
+
+    <script>
+        // Detectar região do usuário e personalizar
+        async function detectUserRegion() {
+            try {
+                const response = await fetch('https://ipapi.co/json/');
+                const data = await response.json();
+                
+                const stateMap = {
+                    'AC': 'Todo Acre',
+                    'AL': 'Todo Alagoas',
+                    'AP': 'Todo Amapá',
+                    'AM': 'Todo Amazonas',
+                    'BA': 'Toda Bahia',
+                    'CE': 'Todo Ceará',
+                    'DF': 'Todo DF',
+                    'ES': 'Todo Espírito Santo',
+                    'GO': 'Todo Goiás',
+                    'MA': 'Todo Maranhão',
+                    'MT': 'Todo Mato Grosso',
+                    'MS': 'Todo Mato Grosso do Sul',
+                    'MG': 'Todo Minas Gerais',
+                    'PA': 'Todo Pará',
+                    'PB': 'Toda Paraíba',
+                    'PR': 'Todo Paraná',
+                    'PE': 'Todo Pernambuco',
+                    'PI': 'Todo Piauí',
+                    'RJ': 'Todo Rio de Janeiro',
+                    'RN': 'Todo Rio Grande do Norte',
+                    'RS': 'Todo Rio Grande do Sul',
+                    'RO': 'Todo Rondônia',
+                    'RR': 'Todo Roraima',
+                    'SC': 'Toda Santa Catarina',
+                    'SP': 'Todo São Paulo',
+                    'SE': 'Todo Sergipe',
+                    'TO': 'Todo Tocantins'
+                };
+                
+                const regionElement = document.getElementById('userRegion');
+                const state = data.region_code || 'DF';
+                const regionText = stateMap[state] || 'Todo Brasil';
+                
+                regionElement.textContent = regionText;
+                
+            } catch (error) {
+                console.log('Erro ao detectar região:', error);
+                document.getElementById('userRegion').textContent = 'Todo Brasil';
+            }
+        }
+        
+        // Executar ao carregar a página
+        detectUserRegion();
+
+        // Floating CTA - Aparece após scroll
+        window.addEventListener('scroll', function() {
+            const floatingCta = document.getElementById('floatingCta');
+            const formSection = document.getElementById('cadastro');
+            const formPosition = formSection.getBoundingClientRect().top;
+            
+            if (window.scrollY > 800 && formPosition > 100) {
+                floatingCta.classList.add('show');
+            } else {
+                floatingCta.classList.remove('show');
+            }
+        });
+
+        // Smooth scroll para âncoras
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Máscara de telefone
+        const phoneInput = document.getElementById('whatsapp');
+        phoneInput.addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.length > 11) value = value.slice(0, 11);
+            
+            if (value.length > 6) {
+                value = value.replace(/(\d{2})(\d{5})(\d{0,4})/, '($1) $2-$3');
+            } else if (value.length > 2) {
+                value = value.replace(/(\d{2})(\d{0,5})/, '($1) $2');
+            } else if (value.length > 0) {
+                value = value.replace(/(\d{0,2})/, '($1');
+            }
+            
+            e.target.value = value;
+        });
+
+        // Simulação de envio de formulário (substitua pela sua integração real)
+        document.getElementById('leadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Aqui você integraria com seu backend/CRM
+            const formData = {
+                nome_oficina: document.getElementById('nome_oficina').value,
+                seu_nome: document.getElementById('seu_nome').value,
+                whatsapp: document.getElementById('whatsapp').value,
+                email: document.getElementById('email').value,
+                timestamp: new Date().toISOString()
+            };
+            
+            console.log('Lead capturado:', formData);
+            
+            // Feedback visual
+            const button = this.querySelector('button[type="submit"]');
+            const originalText = button.textContent;
+            button.textContent = '✅ CADASTRO ENVIADO COM SUCESSO!';
+            button.style.background = 'linear-gradient(135deg, #00ff9d 0%, #00b075 100%)';
+            
+            // Resetar formulário após 2 segundos
+            setTimeout(() => {
+                this.reset();
+                button.textContent = originalText;
+                button.style.background = 'linear-gradient(135deg, #00b075 0%, #00ff9d 100%)';
+                alert('✅ Cadastro enviado com sucesso!\n\nNossa equipe entrará em contato em até 24 horas.\n\nVerifique seu WhatsApp e e-mail.');
+            }, 2000);
+            
+            // Aqui você pode adicionar integração com:
+            // - Google Sheets API
+            // - Webhook do RD Station, HubSpot, etc
+            // - Seu próprio backend
+            // - WhatsApp API
+        });
+
+        // Analytics tracking - Configuração centralizada
+        const TRACKING_CONFIG = {
+            GA4_ID: 'G-XXXXXXXXXX',
+            GTM_ID: 'GTM-XXXXXXX',
+            META_PIXEL_ID: 'YOUR_PIXEL_ID_HERE'
+        };
+
+        // Função universal de tracking
+        function trackEvent(eventName, eventData = {}) {
+            console.log('📊 Event Tracked:', eventName, eventData);
+            
+            // Google Analytics 4
+            if (typeof gtag !== 'undefined') {
+                gtag('event', eventName, eventData);
+            }
+            
+            // Meta Pixel
+            if (typeof fbq !== 'undefined') {
+                fbq('track', eventName, eventData);
+            }
+            
+            // Google Tag Manager
+            if (typeof dataLayer !== 'undefined') {
+                dataLayer.push({
+                    'event': eventName,
+                    ...eventData
+                });
+            }
+        }
+
+        // Track scroll depth
+        let scrollDepths = [25, 50, 75, 100];
+        let trackedDepths = [];
+        
+        window.addEventListener('scroll', function() {
+            const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+            
+            scrollDepths.forEach(depth => {
+                if (scrollPercent >= depth && !trackedDepths.includes(depth)) {
+                    trackedDepths.push(depth);
+                    trackEvent('scroll_depth', { depth: depth + '%' });
+                }
+            });
+        });
+
+        // Track CTA clicks
+        document.querySelectorAll('.cta-button').forEach(button => {
+            button.addEventListener('click', function() {
+                const buttonText = this.textContent.trim();
+                const sectionName = this.closest('section')?.className || 'unknown';
+                
+                trackEvent('cta_click', { 
+                    button_text: buttonText,
+                    section: sectionName,
+                    event_category: 'engagement',
+                    event_label: buttonText
+                });
+                
+                // Meta Pixel - Lead Event
+                if (typeof fbq !== 'undefined') {
+                    fbq('track', 'Lead', {
+                        content_name: buttonText,
+                        content_category: 'CTA Click'
+                    });
+                }
+            });
+        });
+        
+        // Track form interactions
+        document.getElementById('leadForm').addEventListener('focus', function(e) {
+            if (e.target.tagName === 'INPUT') {
+                trackEvent('form_field_focus', {
+                    field_name: e.target.name,
+                    event_category: 'form_interaction'
+                });
+            }
+        }, true);
+        
+        // Track FAQ interactions
+        document.querySelectorAll('.faq-item').forEach((item, index) => {
+            item.addEventListener('click', function() {
+                const question = this.querySelector('.faq-question').textContent;
+                trackEvent('faq_click', {
+                    question_number: index + 1,
+                    question_text: question.substring(0, 50),
+                    event_category: 'engagement'
+                });
+            });
+        });
+        
+        // Track testimonial views (intersection observer)
+        if ('IntersectionObserver' in window) {
+            const testimonialObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const authorName = entry.target.querySelector('.author-name')?.textContent;
+                        trackEvent('testimonial_view', {
+                            author: authorName,
+                            event_category: 'engagement'
+                        });
+                        testimonialObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+            
+            document.querySelectorAll('.testimonial').forEach(testimonial => {
+                testimonialObserver.observe(testimonial);
+            });
+        }
+        
+        // Track time on page
+        let startTime = Date.now();
+        window.addEventListener('beforeunload', function() {
+            const timeOnPage = Math.round((Date.now() - startTime) / 1000);
+            trackEvent('time_on_page', {
+                seconds: timeOnPage,
+                event_category: 'engagement'
+            });
+        });
+    </script>
+</body>
+</html>
