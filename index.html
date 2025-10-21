@@ -938,13 +938,13 @@
                 
                 const regionElement = document.getElementById('userRegion');
                 const state = data.region_code || 'DF';
-                const regionText = stateMap[state] || 'Todo Brasil';
+                const regionText = stateMap[state] || 'Todo DF';
                 
                 regionElement.textContent = regionText;
                 
             } catch (error) {
                 console.log('Erro ao detectar região:', error);
-                document.getElementById('userRegion').textContent = 'Todo Brasil';
+                document.getElementById('userRegion').textContent = 'Todo DF';
             }
         }
         
